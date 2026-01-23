@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ram99-ux/Travel_deploy.git/static/css/main.889d482b.css",
-    "main.js": "/ram99-ux/Travel_deploy.git/static/js/main.54a6bce6.js",
-    "static/media/bootstrap-icons.woff?": "/ram99-ux/Travel_deploy.git/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
-    "static/media/bootstrap-icons.woff2?": "/ram99-ux/Travel_deploy.git/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
-    "index.html": "/ram99-ux/Travel_deploy.git/index.html",
-    "main.889d482b.css.map": "/ram99-ux/Travel_deploy.git/static/css/main.889d482b.css.map",
-    "main.54a6bce6.js.map": "/ram99-ux/Travel_deploy.git/static/js/main.54a6bce6.js.map"
+    "main.css": "/Travel_deploy/static/css/main.0c3c893c.css",
+    "main.js": "/Travel_deploy/static/js/main.54a6bce6.js",
+    "static/media/bootstrap-icons.woff?": "/Travel_deploy/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
+    "static/media/bootstrap-icons.woff2?": "/Travel_deploy/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
+    "index.html": "/Travel_deploy/index.html",
+    "main.0c3c893c.css.map": "/Travel_deploy/static/css/main.0c3c893c.css.map",
+    "main.54a6bce6.js.map": "/Travel_deploy/static/js/main.54a6bce6.js.map"
   },
   "entrypoints": [
-    "static/css/main.889d482b.css",
+    "static/css/main.0c3c893c.css",
     "static/js/main.54a6bce6.js"
   ]
 }
