@@ -17,7 +17,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://github.com/ram99-ux/Travel_deploy.git",
+  "homepage": "https://github.com/ram99-ux/Travel_deploy",
 
   "scripts": {
     "start": "react-scripts start",
