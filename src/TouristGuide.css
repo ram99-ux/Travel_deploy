@@ -1,0 +1,376 @@
+.bg-animated {
+  min-height: 100vh;
+  background: linear-gradient(270deg,#1a102a,#2a1457,#3b1d73,#2a1457);
+  background-size: 600% 600%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+/* Plane Animation */
+.plane {
+  position: absolute;
+ 
+  top: 15%;
+  right: -50px;
+  font-size: 2.5rem;
+  color: #c4b5fd;
+  transform: rotate(-90deg);
+  animation: fly 12s linear infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(0) translateY(0) rotate(-90deg);
+  }
+  50% {
+    transform: translateX(-60vw) translateY(-10px) rotate(-90deg);
+  }
+  100% {
+    transform: translateX(-120vw) translateY(5px) rotate(-90deg);
+  }
+}
+
+
+/* Glass cards */
+.glass-card {
+  background: rgba(30,20,60,0.7);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  color: #e9d5ff;
+  position: relative;
+  z-index: 10;
+}
+
+/* Day & place */
+.day-card {
+  background: rgba(24,15,48,0.85);
+  border-radius: 16px;
+  color: #f5f3ff;
+}
+
+.place-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 14px;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.place-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* Summary */
+.summary-card {
+  background: rgba(30,20,60,0.75);
+  border-radius: 16px;
+  color: #e9d5ff;
+}
+
+/* Animations */
+.fade-in {animation: fadeIn 1s ease;}
+.slide-up {animation: slideUp .8s ease;}
+.pulse {animation: pulse 1.5s infinite;}
+
+@keyframes fadeIn {from{opacity:0}to{opacity:1}}
+@keyframes slideUp {from{transform:translateY(40px);opacity:0}to{opacity:1}}
+@keyframes pulse {0%{opacity:.5}50%{opacity:1}100%{opacity:.5}}
+
+
+/* =========================
+   HERO SUMMARY
+========================= */
+.summary-hero {
+  border-radius: 22px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.summary-hero::after {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(140, 108, 236, 0.103), transparent 70%);
+  filter: blur(90px);
+}
+
+/* Soft badges */
+.badge-soft {
+  background: rgba(167,139,250,0.15);
+  color: #e9d5ff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+/* Stat cards */
+.stat-card {
+  background: rgba(255, 255, 255, 0.178);
+  border-radius: 16px;
+  padding: 15px 10px;
+  color: #f5f3ff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+.stat-icon {
+  font-size: 1.6rem;
+  color: #c4b5fd;
+  margin-bottom: 6px;
+}
+
+/* Floating animation with delay */
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.delay-1 {
+  animation-delay: 0.4s;
+}
+
+.delay-2 {
+  animation-delay: 0.8s;
+}
+
+/* =========================
+   DAY WRAPPER & HEADER
+========================= */
+.day-wrapper {
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.day-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.day-badge {
+  background: linear-gradient(135deg, #a78bfa, #7c3aed);
+  color: white;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(124,58,237,0.4);
+}
+
+.day-line {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(to right, #a78bfa, transparent);
+}
+
+/* =========================
+   PLACE CARD (GLASS)
+========================= */
+.place-glass-card {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 20px;
+  color: #f5f3ff;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  height: 100%;
+}
+
+.place-glass-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   PLACE HEADER
+========================= */
+.place-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.place-type {
+  background: rgba(167,139,250,0.15);
+  color: #e9d5ff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+}
+
+/* =========================
+   INFO & GUIDANCE
+========================= */
+.place-info {
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #ddd6fe;
+}
+
+.place-guidance {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #e9d5ff;
+}
+
+/* =========================
+   COST GRID
+========================= */
+.cost-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 14px;
+  text-align: center;
+}
+
+.cost-grid div {
+  background: rgba(255,255,255,0.05);
+  border-radius: 14px;
+  padding: 8px 4px;
+}
+
+.cost-grid small {
+  display: block;
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+.total-cost {
+  background: linear-gradient(135deg, #22c55e, #16a34a) !important;
+  color: white;
+}
+
+/* =========================
+   HIGHLIGHTS
+========================= */
+.highlights-list {
+  margin-top: 12px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.highlights-list li {
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+  color: #f5f3ff;
+}
+/* =========================
+   INFO GLASS CARDS
+========================= */
+.info-glass-card {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 24px;
+  color: #f5f3ff;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.info-glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.45);
+}
+
+/* =========================
+   HEADER WITH ICON
+========================= */
+.info-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.info-icon {
+  font-size: 1.6rem;
+  color: #c4b5fd;
+}
+
+/* =========================
+   VALUES & TEXT
+========================= */
+.info-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e9d5ff;
+}
+
+.info-sub {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* =========================
+   COST GRID
+========================= */
+.cost-summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cost-summary-grid div {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 14px 10px;
+}
+
+.cost-summary-grid small {
+  display: block;
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+.total-highlight {
+  background: linear-gradient(135deg, #22c55e, #16a34a) !important;
+  color: white;
+}
+
+/* =========================
+   GUIDANCE LIST
+========================= */
+.tips-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.tips-list li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #f5f3ff;
+  display: flex;
+  align-items: center;
+}
+
+.tips-list i {
+  color: #22c55e;
+}
+
+.wow-generate-btn {
+  background: linear-gradient(135deg, #a78bfa, #7c3aed);
+  border: none;
+  border-radius: 16px;
+  font-weight: 600;
+  padding: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wow-generate-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(124,58,237,0.45);
+}
