@@ -58,7 +58,7 @@ function TouristGuide() {
 
   return (
     <div className="bg-animated">
-      <i className="bi bi-airplane plane"></i>
+      <i></i>
 
       <div className="container py-5">
 
@@ -73,7 +73,7 @@ function TouristGuide() {
         {/* INPUT CARD */}
        {/* SEARCH / INPUT HERO CARD */}
 <div className="search-hero glass-card p-4 mb-5 slide-up">
-  <div className="row g-4 align-items-end">
+  <div className="row g-3 align-items-end">
 
     {/* DESTINATION */}
     <div className="col-md-3">
@@ -83,7 +83,7 @@ function TouristGuide() {
       </label>
       <input
         className="form-control wow-input "
-        placeholder="e.g. Dharmapuri"
+        placeholder="Enter Destination"
         value={destination}
         onChange={(e) => setDestination(e.target.value)}
       />
@@ -97,7 +97,7 @@ function TouristGuide() {
       </label>
       <input
         className="form-control wow-input"
-        placeholder="e.g. Chennai"
+        placeholder="Enter Current Location"
         value={currentPlace}
         onChange={(e) => setCurrentPlace(e.target.value)}
       />

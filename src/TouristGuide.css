@@ -1,4 +1,4 @@
-.bg-animated {
+/* .bg-animated {
   min-height: 100vh;
   background: linear-gradient(270deg,#1a102a,#2a1457,#3b1d73,#2a1457);
   background-size: 600% 600%;
@@ -9,16 +9,28 @@
   0% {background-position:0% 50%;}
   50% {background-position:100% 50%;}
   100% {background-position:0% 50%;}
+} */
+
+ 
+
+.bg-animated{
+  background-image: url("./bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+ min-height: 100vh;
+  
+
 }
 
 /* Plane Animation */
-.plane {
+/* .plane {
   position: absolute;
  
   top: 15%;
   right: -50px;
   font-size: 2.5rem;
-  color: #c4b5fd;
+  color: #000000;
   transform: rotate(-90deg);
   animation: fly 12s linear infinite;
 }
@@ -33,7 +45,7 @@
   100% {
     transform: translateX(-120vw) translateY(5px) rotate(-90deg);
   }
-}
+} */
 
 
 /* Glass cards */
@@ -364,9 +376,9 @@
 .wow-generate-btn {
   background: linear-gradient(135deg, #a78bfa, #7c3aed);
   border: none;
-  border-radius: 16px;
+  border-radius: 10px;
   font-weight: 600;
-  padding: 14px;
+  padding: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
