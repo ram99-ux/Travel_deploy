@@ -14,7 +14,8 @@
  
 
 .bg-animated{
-  background-image: url("./bg.png");
+  background: url("./bg.png");
+
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

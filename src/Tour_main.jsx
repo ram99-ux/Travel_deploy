@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "./TouristGuide.css";
+import logo from "./logo.png";
 
 
 
@@ -65,7 +66,7 @@ function TouristGuide() {
         {/* HEADER */}
         <div className="text-center text-white mb-5 fade-in">
           <h1 className="fw-bold">
-            <i className="bi bi-globe2 me-2"></i> TravelMate AI
+            <img src={logo} className="img mx-2" width={"90px"} alt="logo" /> Trip Mate AI
           </h1>
           <p className="opacity-75">Smart AI-powered itinerary planner</p>
         </div>
